@@ -1,9 +1,9 @@
-title:              Clean Blog
-email:              your-email@example.com
-description:        A Blog Theme by Start Bootstrap
-author:             Start Bootstrap
+title:              Rain's personal website 
+email:              wei.xinyu@columbia.edu
+description:        Rain's journey in academics and life 
+author:             Rain Wei 
 baseurl:            "/startbootstrap-clean-blog-jekyll"
-url:                "https://startbootstrap.github.io"
+url:                "https://rainweixy.github.io"
 
 # Social Profiles
 twitter_username:   SBootstrap
