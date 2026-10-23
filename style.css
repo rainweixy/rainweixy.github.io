@@ -17,3 +17,23 @@ h1{font-size:32px}h2{font-size:22px}h3,h4{font-size:14px;line-height:1.3}.cv-lin
 
 /* Match the reference page width and align the portrait with the introduction. */
 .site{max-width:900px;width:calc(100% - 16px);padding:22px 20px 20px}.intro{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:32px;align-items:start}.intro-copy{min-width:0}.profile-portrait{position:relative;width:240px;aspect-ratio:12/13;overflow:hidden}.profile-portrait img{position:absolute;width:185%;max-width:none;height:auto;left:-43%;top:-44%}.dance-gallery{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}.dance-gallery img{width:100%;height:auto;aspect-ratio:2/3;object-fit:cover;object-position:center}.dance-gallery figure{min-width:0}@media(max-width:650px){.intro{grid-template-columns:minmax(0,1fr) 150px;gap:18px}.profile-portrait{width:150px}.site{padding:22px 16px 16px}h1{font-size:28px}}@media(max-width:460px){.intro{grid-template-columns:1fr}.profile-portrait{grid-row:2;width:190px}.dance-gallery{grid-template-columns:1fr}}
+
+/* Narrow reading column, concise project summaries, and generous section spacing. */
+body{line-height:1.5}
+.site{max-width:720px;width:100%;padding:52px 24px 24px}
+h3,h4,.authors,.research-item .authors,.entry-meta{line-height:1.45}
+.intro{display:grid;grid-template-columns:minmax(0,1fr) 170px;column-gap:28px;row-gap:0;padding-bottom:32px}
+.intro-copy{display:contents}
+.intro h1{grid-column:1;grid-row:1;align-self:end;font-size:30px}
+.intro .contact-links{grid-column:1;grid-row:2;margin:12px 0 0;align-self:start}
+.profile-portrait{grid-column:2;grid-row:1/3;width:170px}
+.intro .bio{grid-column:1/-1;grid-row:3;margin-top:26px}
+.bio p+p{margin-top:16px}
+.section{padding:24px 0 10px;border-top:1px solid var(--line)}
+.section-heading{margin-bottom:22px}
+.research-item{margin-bottom:28px}
+.research-item p:not(.authors){margin-top:8px}
+.research-item p.entry-meta{margin-top:3px}
+.resume-entry{margin-bottom:25px}
+@media(max-width:600px){.site{padding:28px 22px 18px}.intro{grid-template-columns:minmax(0,1fr) 120px;column-gap:18px}.profile-portrait{width:120px}.intro h1{font-size:25px}.chinese-name{font-size:15px;margin-left:0}.intro .bio{margin-top:22px}.contact-links{gap:6px 9px}.section{padding-top:22px}}
+@media(max-width:380px){.intro{grid-template-columns:minmax(0,1fr) 95px;column-gap:12px}.profile-portrait{width:95px}.intro h1{font-size:23px}}
