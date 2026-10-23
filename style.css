@@ -37,3 +37,23 @@ h3,h4,.authors,.research-item .authors,.entry-meta{line-height:1.45}
 .resume-entry{margin-bottom:25px}
 @media(max-width:600px){.site{padding:28px 22px 18px}.intro{grid-template-columns:minmax(0,1fr) 120px;column-gap:18px}.profile-portrait{width:120px}.intro h1{font-size:25px}.chinese-name{font-size:15px;margin-left:0}.intro .bio{margin-top:22px}.contact-links{gap:6px 9px}.section{padding-top:22px}}
 @media(max-width:380px){.intro{grid-template-columns:minmax(0,1fr) 95px;column-gap:12px}.profile-portrait{width:95px}.intro h1{font-size:23px}}
+
+/* Airier academic reading layout. */
+body{font-size:15px;line-height:1.65}
+.site{max-width:688px;padding-top:60px}
+.intro{padding-bottom:42px}
+.intro .bio{margin-top:32px}
+.bio p+p{margin-top:22px}
+h2{font-size:23px;font-weight:700}
+h3,h4{font-size:15px;line-height:1.5}
+.section{padding-top:30px;padding-bottom:16px}
+.section-heading{margin-bottom:26px}
+.research-item{margin-bottom:38px}
+.research-item .authors{font-size:13px;color:var(--muted);margin-top:5px}
+.entry-meta{font-size:12px;line-height:1.5}
+.research-item p:not(.authors):not(.entry-meta){margin-top:13px}
+.paper-links{margin-top:10px;font-size:13px}
+.resume-entry{margin-bottom:30px}
+.resume-entry>p:not(.entry-meta){margin-top:10px}
+.subsection-heading{margin-top:26px;margin-bottom:18px}
+@media(max-width:600px){body{font-size:14px;line-height:1.6}.site{padding:28px 24px 18px}h3,h4{font-size:14px}.intro{padding-bottom:32px}.intro .bio{margin-top:26px}.section{padding-top:25px}.research-item{margin-bottom:32px}}
