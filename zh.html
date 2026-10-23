@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-Hans"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>魏昕雨 · Xinyu (Rain) Wei</title>
+  <meta name="description" content="魏昕雨：机器学习、统计学习与优化研究。哥伦比亚大学计算机科学毕业生、Capula 量化分析师及 Lokin 联合创始人。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css?v=20261023-language">
+</head>
+<body>
+<a class="skip" href="#about">跳至正文</a>
+<div class="site">
+  <nav class="language-switch" aria-label="Language / 语言"><a href="index.html" lang="en">EN</a><a href="zh.html" lang="zh-Hans" aria-current="page">中文</a></nav>
+  <main>
+    <section class="intro" id="about">
+      <div class="intro-copy">
+      <h1>Xinyu (Rain) Wei <span class="chinese-name" lang="zh-Hans">魏昕雨</span></h1>
+      <div class="contact-links"><a class="cv-link" href="Xinyu_Wei_CV.pdf" target="_blank" rel="noopener">简历（英文）</a><span aria-hidden="true">/</span><a href="mailto:xw2762@columbia.edu">邮箱</a><span aria-hidden="true">/</span><a href="#research">研究</a><span aria-hidden="true">/</span><a href="#personal">研究之外</a></div>
+      <div class="bio"><p>我目前在 Capula Investment Management 从事量化分析，也是交易研究与回测平台 <a href="https://www.lokinapp.com/discover" target="_blank" rel="noopener">Lokin</a> 的联合创始人，同时与哥伦比亚大学的研究团队合作开展机器学习研究。2024 年，我以最高荣誉（<em>summa cum laude</em>）获得哥伦比亚大学计算机科学学士学位。我的研究导师包括 <a href="https://www.columbia.edu/~jw2966/">John Wright</a>、<a href="https://www.physics.columbia.edu/content/szabolcs-marka" target="_blank" rel="noopener">Szabolcs Márka</a>、<a href="https://kw2934.github.io/">Kaizheng Wang</a> 和 <a href="https://www.columbia.edu/~gi10/">Garud Iyengar</a>。</p>
+      <p>我的研究关注数据中的结构与学习到的表示如何影响学习和推断，并结合数学分析与实证研究，探索更好的算法。具体方向涵盖神经网络训练动力学、几何优化、自适应统计学习，以及面向决策的优化，尤其关注计算效率与性能的可靠性。</p><p>我在河北长大，15 岁时搬到悉尼，随后前往纽约读大学并开始工作，目前在伦敦生活和工作。工作与研究之外，我也是一名职业拉丁舞者。</p></div>
+      </div><div class="profile-portrait"><img src="assets/portrait.jpg" width="4420" height="6630" alt="魏昕雨身着哥伦比亚大学毕业礼服" fetchpriority="high"></div>
+    </section>
+    <section id="experience" class="section">
+      <div class="section-heading"><h2>工作经历</h2></div>
+      <article class="resume-entry"><h3>Capula Investment Management</h3><p class="entry-meta">2024 年 10 月至今 · 量化分析师 · 纽约与伦敦<br>2024 年 6–9 月 · 量化研究与交易实习生</p><p>我针对噪声较大、观测稀疏且不断变化的金融数据，开发统计学习与约束优化方法，涉及自适应多任务估计、状态空间模型、回归模型和决策优化。同时，我也搭建支持并行计算、缓存和可复现分析的共享研究基础设施。</p></article>
+      
+    </section>
+    <section id="research" class="section">
+      <div class="section-heading"><h2>研究</h2></div>
+      <article class="research-item" id="latent-express-traversal"><div><h3>Latent Express Traversal：基于流形的去噪</h3><p class="authors">研究导师：John Wright 与 Szabolcs Márka</p><p class="entry-meta">2026 年 9 月至今 · 在研项目</p><p>我研究几何去噪能否替代神经自编码器的推断过程，并比较其重建精度、内存占用与推断开销。我通过合并冗余连接构建了更高效的搜索图，并主导相关理论分析，研究几何搜索在何种条件下能够保持重建精度。</p></div></article>
+      <article class="research-item"><div><h3><a href="https://arxiv.org/abs/2310.10039" target="_blank" rel="noopener">TpopT：低维流形上的高效可训练模板优化</a></h3><p class="authors">研究导师： John Wright</p><p class="entry-meta">2023 年 3 月–2024 年 6 月 · arXiv 预印本（2023）</p><p>我主导了低维信号流形上可训练优化方法的理论分析，为黎曼梯度下降建立了局部收敛保证，并刻画了噪声对重建精度的影响。这些结果解释了如何利用信号的内在几何结构，相较于穷举模板搜索降低重建的计算成本。</p><div class="paper-links"><a href="https://arxiv.org/abs/2310.10039" target="_blank" rel="noopener">论文（英文）</a><a href="assets/tpopt-poster.pdf" target="_blank" rel="noopener">海报（英文） <span class="file-type">PDF</span></a></div></div></article>
+      <article class="research-item"><div><h3>神经网络理论：训练动力学与神经切线核</h3><p class="authors">研究导师： John Wright</p><p class="entry-meta">2022 年 4 月–2023 年 4 月 · 合作理论研究</p><p>我在有限宽 ReLU 网络的时变神经切线核框架下，推导特征扰动界并分析激活模式的变化；同时结合理论证明与基于合成流形的 PyTorch 实验，研究局部几何和训练中不断演化的核结构如何影响学习过程。</p></div></article>
+      <article class="research-item"><div><h3>自适应统计学习与多任务学习</h3><p class="authors">研究导师： Kaizheng Wang</p><p class="entry-meta">2022 年 8 月–2024 年 6 月 · 研究项目</p><p>我研究在什么条件下汇集相关任务的信息能够改善统计估计，以及任务间差异如何影响偏差与方差的权衡。通过理论分析和蒙特卡洛实验，我将多任务估计与交叉验证方法同经典统计、贝叶斯及理想参照（oracle）方法进行比较。</p></div></article>
+      <article class="research-item"><div><h3><a href="assets/e2e-portfolio-poster.pdf" target="_blank" rel="noopener">面向投资组合构建的端到端变分推断</a></h3><p class="authors">研究导师： Garud Iyengar</p><p class="entry-meta">2023 年 4 月–2024 年 6 月 · 研究项目；海报展示（2023）</p><p>我研究将变分推断与可微投资组合优化相结合的端到端学习框架，使下游决策目标能够直接指导概率分布的学习。我的工作连接概率建模与约束优化，探究预测精度和决策质量之间的关系，并通过与“先预测、再优化”及直接资产配置方法的比较加以验证。</p><div class="paper-links"><a href="assets/e2e-portfolio-poster.pdf" target="_blank" rel="noopener">海报（英文） <span class="file-type">PDF</span></a></div></div></article>
+    </section>
+    <section id="publications" class="section"><div class="section-heading"><h2>论文</h2></div><article class="resume-entry"><h3><a href="https://arxiv.org/abs/2310.10039" target="_blank" rel="noopener">TpopT：低维流形上的高效可训练模板优化</a></h3><p class="authors">J. Yan, S. Wang, <strong>X. R. Wei</strong>, J. Wang, Z. Márka, S. Márka, and J. Wright</p><p class="entry-meta">2023 · arXiv 预印本 · arXiv:2310.10039</p></article></section>
+    <section id="patent" class="section"><div class="section-heading"><h2>专利</h2></div><article class="resume-entry"><h3><a href="https://patents.google.com/patent/US20250077872A1/en" target="_blank" rel="noopener">用于信号检测的低维流形高效可训练模板优化系统与方法</a></h3><p class="authors">J. Yan, S. Wang, <strong>X. R. Wei</strong>, Z. Marka, S. Marka, and J. Wright</p><p class="entry-meta">2025 年 3 月 6 日公开 · 美国专利申请 US20250077872A1</p><p>利用可训练模板优化，从含噪观测中检测具有低维结构的信号。</p></article></section>
+    <section id="education" class="section">
+      <div class="section-heading"><h2>教育经历</h2></div>
+      <article class="resume-entry"><h3>哥伦比亚大学</h3><p class="entry-meta">2020 年 9 月–2024 年 5 月 · 计算机科学学士，智能系统方向</p><p>最高荣誉毕业（<em>summa cum laude</em>）· GPA：4.092 · 前 5%</p><p>Upsilon Pi Epsilon 荣誉学会（2024）；Bonomi 研究学者（2023）；电气工程暑期研究资助（2023）；大三入选 Tau Beta Pi 工程荣誉学会（2022）；数学本科生暑期研究资助（2022）；数学建模研究资助（2021）。</p><p><a href="courses.html">修读课程（英文）</a></p></article>
+      <article class="resume-entry"><h3>Meriden School</h3><p class="entry-meta">2016 年 1 月–2019 年 12 月 · 高中毕业证书（HSC）· 澳大利亚悉尼</p><p>ATAR：99.95，澳大利亚最高等级。获 HSC 全科优异及杰出成绩荣誉；在澳大利亚物理与化学奥林匹克竞赛中获 High Distinction（2018）。</p></article>
+    </section>
+    <section id="teaching" class="section">
+      <div class="section-heading"><h2>教学经历</h2></div>
+      <article class="resume-entry"><h3>哥伦比亚大学</h3><p>曾担任以下课程的助教：</p><ul><li><strong>机器学习</strong> — COMS 4771，研究生课程</li><li><strong>计算机科学理论</strong> — COMS 3261</li><li><strong>离散数学</strong> — COMS 3203</li></ul></article>
+    </section>
+    <section id="personal" class="section">
+      <div class="section-heading"><h2>研究之外</h2></div>
+      <h3 class="subsection-heading">创业经历</h3>
+      <article class="resume-entry" id="lokin"><h4><a href="https://www.lokinapp.com/discover" target="_blank" rel="noopener">Lokin</a></h4><p class="entry-meta">2026 年 9 月至今 · 联合创始人</p><p>我联合创办了 Lokin，一个支持协作式交易研究与回测的平台。我主要负责智能体研究流程，以及用于探索、比较和版本管理的策略研究工具。平台已上线，并迎来了首批用户。</p></article>
+      <article class="resume-entry"><h4>EY EdTech</h4><p class="entry-meta">2020–2024 · 创始人兼首席执行官</p><p>我创办并管理了一家国际教育公司，带领由 70 余名教师和成员组成的团队，负责课程、运营、销售与教学服务。公司帮助 200 余名 HSC 和 VCE 学生取得了 95 分及以上的 ATAR 成绩。</p></article>
+      <h3 class="subsection-heading">职业舞蹈</h3>
+      <article class="resume-entry"><h4>国际拉丁舞</h4><p class="entry-meta">2004 年至今 · 职业舞者与舞蹈教师</p><p>我是一名接受专业训练的国际拉丁舞者和教师，参加 WDC 与 NDCA 认可的赛事。我从四岁开始学习舞蹈，目前每周训练约 15 小时，同时教授一对一及团体课程。</p><p>主要国际及全国赛事成绩包括：The Open Worlds 拉丁舞单人组半决赛（2026）、The Open Worlds ProAm Latin A 组季军（2025）、Philadelphia ProAm Latin Scholarships Open A 组冠军（2024），以及 United States Dance Championship、King’s Ball 和 Emerald Ball 决赛席位。</p><p><a href="dance-awards.html">比赛成绩（英文）</a> · <a href="photos.html">舞蹈相册（英文）</a></p></article>
+    </section>
+  </main>
+  <footer><span>© 2026 Xinyu (Rain) Wei</span><a href="mailto:xw2762@columbia.edu">xw2762@columbia.edu</a><a href="#about">返回顶部 ↑</a></footer>
+</div>
+
+
+</body></html>

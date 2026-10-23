@@ -57,3 +57,14 @@ h3,h4{font-size:15px;line-height:1.5}
 .resume-entry>p:not(.entry-meta){margin-top:10px}
 .subsection-heading{margin-top:26px;margin-bottom:18px}
 @media(max-width:600px){body{font-size:14px;line-height:1.6}.site{padding:28px 24px 18px}h3,h4{font-size:14px}.intro{padding-bottom:32px}.intro .bio{margin-top:26px}.section{padding-top:25px}.research-item{margin-bottom:32px}}
+
+/* Accessible bilingual navigation. */
+.language-switch{display:flex;justify-content:flex-end;gap:0;margin:-26px 0 24px;font-size:13px;line-height:1.4}
+.language-switch a{padding:5px 12px;border:1px solid var(--line);color:var(--muted);background:#fff}
+.language-switch a:first-child{border-radius:5px 0 0 5px}
+.language-switch a:last-child{border-radius:0 5px 5px 0;border-left:0}
+.language-switch a[aria-current="page"]{background:#edf3f7;color:var(--accent);font-weight:700}
+html[lang="zh-Hans"] body{font-family:Lato,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;line-height:1.85}
+html[lang="zh-Hans"] .chinese-name{font-family:"SimSun","宋体","Songti SC",serif}
+html[lang="zh-Hans"] h3,html[lang="zh-Hans"] h4{line-height:1.6}
+@media(max-width:600px){.language-switch{margin:-8px 0 24px}}
